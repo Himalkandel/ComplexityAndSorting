@@ -6,7 +6,6 @@ import Shapes.GeometricShape;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 //mainly to get user input on which selection to use
 
 public class App {
@@ -28,9 +27,13 @@ public class App {
             System.out.println("Choose a sorting method:");
             System.out.println("1. Bubble Sort");
             System.out.println("2. Insertion Sort");
+            System.out.println("3. Selection Sort");
+            System.out.println("4. Merge Sort");
+            System.out.println("5. Quick Sort");
+            System.out.println("6. Heap Sort");
             // add the options based on case numbers
 
-            scanner.nextLine();  // leftover newlines
+            scanner.nextLine(); // leftover newlines
             System.out.println("Waiting for user input...");
             int choice = scanner.nextInt();
 
@@ -47,7 +50,25 @@ public class App {
                     SortingUtility.insertionSort(shapesArray);
                     System.out.println("Sorted using Insertion Sort!");
                     break;
-                // Add the other sorting method cases here
+                case 3:
+                    System.out.println("Performing Selection Sort...");
+                    SortingUtility.selectionSort(shapesArray);
+                    System.out.println("Sorted using Selection Sort!");
+                    break;
+                case 4:
+                    System.out.println("Performing Merge Sort...");
+                    SortingUtility.mergeSort(shapesArray);
+                    System.out.println("Sorted using Merge Sort!");
+                    break;
+                case 5:
+                    System.out.println("Performing Quick Sort...");
+                    SortingUtility.quickSort(shapesArray, choice, choice);
+                    System.out.println("Sorted using Quick Sort!");
+                    break;
+                case 6:
+                    System.out.println("Performing Heap Sort...");
+                    SortingUtility.heapSort(shapesArray);
+                    System.out.println("Sorted using Heap Sort!");
                 default:
                     System.out.println("Invalid choice!");
             }
