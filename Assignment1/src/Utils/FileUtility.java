@@ -13,7 +13,7 @@ public class FileUtility {
 
     public static ArrayList<GeometricShape> readShapesFromFile(String filePath) throws Exception {
         ArrayList<GeometricShape> shapeList = new ArrayList<>();
-    
+  
         File file = new File(filePath);
         Scanner scanner = new Scanner(file);
         String line = scanner.nextLine();
