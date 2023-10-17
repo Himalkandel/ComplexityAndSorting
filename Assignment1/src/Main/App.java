@@ -42,33 +42,53 @@ public class App {
             switch (choice) {
                 case 1:
                     System.out.println("Performing Bubble Sort...");
+                    long bubbleSortStart = System.currentTimeMillis(); // start time of the bubble sort
                     SortingUtility.bubbleSort(shapesArray);
+                    long bubbleSortEnd = System.currentTimeMillis(); // end time of the bubble sort
                     System.out.println("Sorted using Bubble Sort!");
+                    System.out.println("Time taken: " + (bubbleSortEnd - bubbleSortStart) + "milliseconds");
+
                     break;
                 case 2:
                     System.out.println("Performing Insertion Sort...");
+                    long insertionSortStart = System.currentTimeMillis();
                     SortingUtility.insertionSort(shapesArray);
+                    long insertionSortEnd = System.currentTimeMillis();
                     System.out.println("Sorted using Insertion Sort!");
+                    System.out.println("Time taken: " + (insertionSortEnd - insertionSortStart) + "milliseconds");
                     break;
                 case 3:
                     System.out.println("Performing Selection Sort...");
+                    long selectionSortStart = System.currentTimeMillis();
                     SortingUtility.selectionSort(shapesArray);
+                    long selectionSortEnd = System.currentTimeMillis();
                     System.out.println("Sorted using Selection Sort!");
+                    System.out.println("Time taken: " + (selectionSortEnd - selectionSortStart) + "milliseconds");
                     break;
                 case 4:
                     System.out.println("Performing Merge Sort...");
+                    long mergeSortStart = System.currentTimeMillis();
                     SortingUtility.mergeSort(shapesArray);
+                    long mergeSortEnd = System.currentTimeMillis();
                     System.out.println("Sorted using Merge Sort!");
+                    System.out.println("Time taken: " + (mergeSortEnd - mergeSortStart) + "milliseconds");
                     break;
                 case 5:
                     System.out.println("Performing Quick Sort...");
+                    long quickSortStart = System.currentTimeMillis();
                     SortingUtility.quickSort(shapesArray, choice, choice);
+                    long quickSortEnd = System.currentTimeMillis();
                     System.out.println("Sorted using Quick Sort!");
+                    System.out.println("Time taken: " + (quickSortEnd - quickSortStart) + "milliseconds");
                     break;
                 case 6:
                     System.out.println("Performing Heap Sort...");
+                    long heapSortStart = System.currentTimeMillis();
                     SortingUtility.heapSort(shapesArray);
+                    long heapSortEnd = System.currentTimeMillis();
                     System.out.println("Sorted using Heap Sort!");
+                    System.out.println("Time taken: " + (heapSortEnd - heapSortStart) + "milliseconds");
+                    break;
                 default:
                     System.out.println("Invalid choice!");
             }
