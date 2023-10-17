@@ -33,8 +33,7 @@ public class App {
             System.out.println("6. Heap Sort");
             // add the options based on case numbers
 
-            scanner.nextLine(); // leftover newlines
-            System.out.println("Waiting for user input...");
+            System.out.print("Select Sorting Algorithm: ");
             int choice = scanner.nextInt();
 
             GeometricShape[] shapesArray = shapes.toArray(new GeometricShape[0]);
