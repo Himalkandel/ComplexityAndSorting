@@ -50,7 +50,10 @@ public class FileUtility {
                     TriangularPrism triangularPrism = new TriangularPrism(Double.parseDouble(parts[1]), Double.parseDouble(parts[2]));
                     shapeList.add(triangularPrism);
                     break;
-                // ... add more cases for other shape types as needed
+                case "Cone":
+                    Cone cone = new Cone(Double.parseDouble(parts[1]), Double.parseDouble(parts[2]));
+                    shapeList.add(cone);
+                    break;
                 default:
                     System.out.println("Unknown shape type in file: " + shapeType);
                     break;

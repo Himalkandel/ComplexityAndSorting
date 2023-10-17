@@ -3,18 +3,20 @@ package Shapes.Prisms;
 import Shapes.Prism;
 
 public class TriangularPrism extends Prism {
+    private double sideLength;
 
-    private double baseLength;
-    private double heightOfTriangle;
-
-    public TriangularPrism(double height, double baseLength, double heightOfTriangle) {
+    public TriangularPrism(double height, double sideLength) {
         super(height);
-        this.baseLength = baseLength;
-        this.heightOfTriangle = heightOfTriangle;
+        this.sideLength = sideLength;
     }
 
     @Override
-    public double baseArea() {
-        return 0.5 * baseLength * heightOfTriangle;
+    public double getBaseArea() {
+        return (Math.sqrt(3) / 4.0) * Math.pow(sideLength, 2);
+    }
+
+    @Override
+    public double getVolume() {
+        return getBaseArea() * height;
     }
 }

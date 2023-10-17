@@ -1,15 +1,14 @@
 package Shapes;
 
-public abstract class Prism {
-    protected double height;
+public abstract class Prism extends GeometricShape {
 
     public Prism(double height) {
-        this.height = height;
+        super(height);
     }
 
-    public abstract double baseArea();
+    public abstract double getBaseArea();
 
     public double volume() {
-        return baseArea() * height;
+        return getBaseArea() * height;
     }
 }

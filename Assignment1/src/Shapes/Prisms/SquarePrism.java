@@ -3,7 +3,6 @@ package Shapes.Prisms;
 import Shapes.Prism;
 
 public class SquarePrism extends Prism {
-
     private double sideLength;
 
     public SquarePrism(double height, double sideLength) {
@@ -12,7 +11,12 @@ public class SquarePrism extends Prism {
     }
 
     @Override
-    public double baseArea() {
+    public double getBaseArea() {
         return sideLength * sideLength;
+    }
+
+    @Override
+    public double getVolume() {
+        return getBaseArea() * height;
     }
 }
