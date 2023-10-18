@@ -81,7 +81,7 @@ public class SortingUtility {
 
     public static void selectionSort(GeometricShape[] arr) {
         int n = arr.length;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; 1 < n - 1; i++) {
             int minIndex = i;
             for (int j = i + 1; j < n; j++) {
                 if (arr[j].compareTo(arr[minIndex]) < 0) {

@@ -12,8 +12,8 @@
             "name": "App with Default File Path",
             "request": "launch",
             "mainClass": "Main.App",
-            "projectName": "ComplexityAndSorting_49828016",
-            "args": ["C:\\Users\\liamm\\Desktop\\polyfor1.txt"]
+            "projectName": "ComplexityAndSorting_c568af49",
+            "args": ["C:\\Users\\liamm\\Desktop\\polyfor1.txt"] //change file location here for sorting
         }
     ]
 }
