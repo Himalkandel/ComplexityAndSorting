@@ -1,4 +1,3 @@
-//done by gpt but i fixed errors, shud be fine
 package Utils;
 
 import Shapes.GeometricShape;
