@@ -1,7 +1,3 @@
-
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 {
     "version": "0.2.0",
     "configurations": [
@@ -13,12 +9,11 @@
         },
         {
             "type": "java",
-            "name": "App",
+            "name": "App with Default File Path",
             "request": "launch",
             "mainClass": "Main.App",
-            "projectName": "ComplexityAndSorting_c568af49",
-            "args": ["C:\\Users\\Himal\\Desktop\\polyfor1.txt"] //change file location here for sorting
+            "projectName": "ComplexityAndSorting_49828016",
+            "args": ["C:\\Users\\liamm\\Desktop\\polyfor1.txt"]
         }
     ]
 }
-    
