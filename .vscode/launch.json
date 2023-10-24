@@ -13,7 +13,7 @@
             "request": "launch",
             "mainClass": "Main.App",
             "projectName": "ComplexityAndSorting",
-            "args": ["C:\\Users\\huang\\OneDrive\\Desktop\\polyfor1.txt"] //change file location here for sorting
+            "args": ["C:\\Users\\Vinh\\Desktop\\polyfor1.txt"] //change file location here for sorting
         }
     ]
 }
